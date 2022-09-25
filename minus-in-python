@@ -1,0 +1,22 @@
+i = 0
+i = int((input("key in 1 to continue, 0 to stop ")))
+a = 0
+b = 0
+
+def findDifferent(a,b):
+    if (b>a):
+        return b-a
+    else:
+        return a-b
+    
+while True:
+    if i == 1:
+        a = int(input("First number :"))
+        b = int(input("Second number :"))
+        print(findDifferent(a,b))
+        i = int((input("key in 1 to continue, 0 to stop ")))
+    
+    if i == 0 :
+        print("stop")
+        break
+        
